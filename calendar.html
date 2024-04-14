@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<div class="wrapper">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calendar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Luckiest+Guy&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <input type="file" id="imageUploader" accept="image/*" />
+    <div class="navigation">
+      <img src="images/kitty.gif" alt="Left Cat" class="nav-cat" />
+      <button id="prevMonth">Previous</button>
+      <div class="cloud-container">
+        <img src="images/cloud.gif" alt="Cloud" id="cloud-img" />
+        <span id="currentMonthYear"></span>
+      </div>
+      <button id="nextMonth">Next</button>
+      <img src="images/kitty.gif" alt="Right Cat" class="nav-cat" />
+    </div>
+    <div id="daysOfWeek" class="calendar-container"></div>
+    <div id="calendar" class="calendar-container"></div>
+    <div id="eventsDisplay" style="display:none;"></div>
+     <div id="eventFormContainer"></div>
+
+    <script src="script.js"></script>
+  </body>
+</div>
+</html>
